@@ -1,0 +1,228 @@
+<!DOCTYPE html><!--Tell the browser that this is a html file-->
+<html lang="en"><!--Standard language-->
+<head>
+	<!--Set font encoding format in this page-->
+	<meta charset="UTF-8">
+	<!--The title of page-->
+	<title>Home page</title>
+	<!--Set URL initial location-->
+	<base href="./../../">
+	<!--对 html 文档的描述或规定-->
+	<meta name="keywords" content="no keywords">
+	<meta name="description" content="no description">
+	<meta name="author" content="insvetinn">
+	<!--refresh this page every 30 seconds-->
+<!--	<meta http-equiv="refresh" content="30">-->
+	<!--定义了 html 文档与外部资源之间的关系, 通常用于链接到 CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/index.css">
+<!--	定义了HTML文档的样式文件引用地址-->
+<!--	可以直接添加样式来渲染 HTML 文档-->
+	<!--i.e.-->
+<!--	<style type="text/css">-->
+<!--		body {background-color:yellow}-->
+<!--		p {color:blue}-->
+<!--	</style>-->
+<!--	<style>-->
+<!--		p.long_para {-->
+<!--			background-color:aliceblue;-->
+<!--			color:#1a3300;-->
+<!--		}-->
+<!--	</style>-->
+</head>
+<!--The actual content of page-->
+<body>
+	<!--<hr>--><!--The dividing line-->
+	<h1>This is the head</h1>
+	<p class="date">
+		Apr 19, 2022
+	</p>
+	<p class="long_para">
+		<!--Insert text-->
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph.
+		<br /><!--Insert newline character-->
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph.
+		<br />
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph.
+		<br />
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph. This is a paragraph. This is a paragraph.
+		This is a paragraph.
+		<br />
+	</p>
+	<hr />
+	<p>
+		<!--Insert hyperlink-->
+		<!--Text hyperlink-->
+		This is <a href="https://twitter.com/insvetinn4496" target="_blank" style="text-decoration:none;">linglan's Twitter account</a>.
+		<br />
+		<!--Image hyperlink-->
+		<br /><a href="https://www.pixiv.net/en/users/75386038" target="_blank" style="text-decoration:none;"><img src="./resrc/image/96941543_p0.png" width="192" height="192" /></a>
+		<br />
+	</p>
+	<p>
+		<!--Insert image-->
+		<img src="./resrc/image/96941543_p0.png" alt="Lily White" width="192" height="192" />
+		<img src="./resrc/image/97010252_p0.png" alt="Remilia Scarlet" width="192" height="192" />
+		<!--<img src="./../../resrc/image/97010252_p0.png" alt="Remilia Scarlet" width="192" height="384" />-->
+	</p>
+	<p>
+		<!--页面内 / 间跳转?-->
+		<a id="positionA">position A</a>
+		<br />
+		<a href="#positionA">click here to teleport to position A</a>
+		<br />
+		<a href="file:///home/insvetinn/IdeaProjects/ANormalGUIProgram/src/html/index.html#positionA">click here to teleport to position A</a>
+		<br />
+	</p>
+	<hr />
+	<p>
+		<!--Table-->
+		<table border="7"><!--边框间距--><!--cellpadding="10"单元格空白间距--><!--cellspacing="10"单元格间距-->
+		<caption>Common Creatures</caption>
+		<tr><th>Pieces\Value</th>	<th>Life</th>	 	<th>Attack</th>		<th colspan="2">Defence & Speed</th>		</tr>
+		<tr><th>Jellyfish</th>		<td>70</td>		<td>17</td>		<td>9</td>			<td>7</td></tr>
+		<tr><th rowspan="2">Bunny <br />& Neko</th>
+						<td>107</td>		<td>9</td>		<td>13</td>			<td>17</td></tr>
+						<td>217</td>		<td>13</td>		<td>17</td>			<td>19</td></tr>
+		<tr><th>Remilia<br />
+			<img src="./resrc/image/97010252_p0.png" alt="(Remilia Scarlet)" width="72" height="72" /></th>
+						<td>1777</td>		<td>179</td>		<td>117</td>			<td>97</td></tr>
+		</table>
+	</p>
+	<p>
+		<!--List-->
+		<!--List without order-->
+		<h3>Checklist</h3>
+		<ul><!--The little dot-->
+			<li>Drinking water</li>
+			<li>Food</li>
+			<li>Medicine</li>
+			<ul>
+				<li>...</li>
+				<li>...</li>
+			</ul>
+		</ul>
+	
+		<!--List with order-->
+		<h3>Checklist</h3>
+		<ol><!--The serial number-->
+			<li>Drinking water</li>
+			<li>Food</li>
+			<li>Medicine</li>
+		</ol>
+		
+		<h3>Checklist</h3>
+		<ol type="I"><!--The serial number-->
+			<li>Drinking water</li>
+			<li>Food</li>
+			<li>Medicine</li>
+		</ol>
+	
+		<h3>Checklist</h3>
+		<ol type="i"><!--The serial number-->
+			<li>Drinking water</li>
+			<li>Food</li>
+			<li>Medicine</li>
+		</ol>
+	
+		<h3>Checklist</h3>
+		<ol type="A"><!--The serial number-->
+			<li>Drinking water</li>
+			<li>Food</li>
+			<li>Medicine</li>
+		</ol>
+	
+		<h3>Checklist</h3>
+		<ol type="a"><!--The serial number-->
+			<li>Drinking water</li>
+			<li>Food</li>
+			<li>Medicine</li>
+		</ol>
+	
+		<!--Customized list-->
+		<dl>
+		<dt>Food</dt>
+			<dd>- Rice</dd>
+			<dd>- Other Food</dd>
+		<dt>Medicine</dt>
+			<dd>+ Penicillin</dd>
+			<dd>+ Aspirin</dd>
+			<dd>+ Other medicine</dd>
+		</dl>
+	</p>
+	<hr />
+	<!--<div> 元素, 块级元素, 其他元素的容器, 与 CSS 一同使用可用于对大范围的内容块设置样式属性-->
+	<!--<span> 元素, 内联元素, 文本的容器, 与 CSS 一同使用可用于为部分文本设置样式属性-->
+	<div style="color:#0000FF">
+		<p>This is a div. </p>
+		<p>This is a div. </p>
+		<p>This is a div. </p>
+		<p>This is a div. </p>
+	</div>
+	<!--<table>不是布局工具, <div>才是布局工具-->
+	<hr />
+	<form action="">
+		Login: <br />
+		Username: <input type="text" name="Username" /><br />
+		Password: <input type="password" name="Password" /><br />
+		<input type="submit" value="Log in" /><br />
+		<br />
+		Please select you gender: <br />
+		<input type="radio" name="gender" value="male" />Male<br />
+		<input type="radio" name="gender" value="female" />Female<br />
+		<input type="radio" name="gender" value="others" />Others<br />
+		<br />
+		Please select correct presentations: <br />
+		<input type="checkbox" name="answer" value="1 + 1 = 2" />1 + 1 = 2<br />
+		<input type="checkbox" name="answer" value="1 + 1 = 3" />1 + 1 = 3<br />
+		<input type="checkbox" name="answer" value="2 + 2 = 4" />2 + 2 = 4<br />
+		<br />
+		Please select your age: <select name="Age">
+			<option value="< 20">< 20</option>
+			<option value="> 20, < 60">> 20, < 60</option>
+			<option value="> 60">< 60</option></select><br />
+		<br />
+		Please comment here: <br />
+		<textarea rows="13" cols="32">Share your feelings!</textarea><br />
+		<br />
+	</form>
+	<hr />
+	<form>
+		<fieldset>
+			<legend>一键猫叫</legend>
+			There is a nya-ton: <input type="button" value="一键猫叫"><br />
+			<br />
+		</fieldset>
+		<br />
+	</form>
+	<br />
+<!--	<iframe-->
+<!--		loading="lazy" src="./src/html/index.html"-->
+<!--		frameborder="0" width="960" height="540">-->
+<!--	</iframe>-->
+<!--	<br />-->
+	<iframe
+		loading="lazy" src="./src/html/index.html" name="iframe_a"
+		frameborder="0" width="70%" height="540">
+	</iframe>
+	<br />
+<!--	Switch faled...-->
+	<p>
+		<a href="https://twitter.com/insvetinn4496" target="iframe_a" style="text-decoration:none;">Switch to linglan's Twitter</a>
+		<br />
+	</p>
+	<p>
+		<script>
+			document.write("Hello World!")
+		</script>
+		<noscript>Sorry, JavaScript is not supported by your browser!</noscript>
+	</p>
+	<!--URL format: scheme://host.domain:port/path/filename-->
+</body>
+</html>

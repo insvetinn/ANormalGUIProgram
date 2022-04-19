@@ -1,0 +1,257 @@
+/*html {
+	font-family:"CHO Pixel Code", Zpix;
+        font-variant:small-caps;*/
+	/*设置最大最小行高行宽*/
+        /*max-height:70px;
+	max-weight:177px;
+	min-height:10px;
+	min-weight:10px;
+}*/
+
+div.none {
+	/*不可见, 但占用布局*/
+	visibility:hidden;
+	/*不可见, 且不占用布局*/
+	display:none;
+	/*将块元素以内联元素的形式使用*/
+	display:inline;
+	/*将内联元素以块元素的形式使用*/
+	display:block;
+
+	position:static;	/*默认定位*/
+	left:20px; /*距离左边 20px*/
+	position:relative;	/*页面上相对定位*/
+	position:fixed;		/*窗口上固定定位*/
+	position:absolute;	/*页面上绝对定位*/
+	position:sticky;	/*页面上相对定位, 但到了边缘就固定了*/
+
+	/*重叠, 与页面不在同一个图层*/
+	z-index:-1;
+	/*裁剪一个元素*/
+	clip:rect(0px,20px,100px,0px);
+	/*当元素内容大于元素空间时可以滚动*/
+	overflow:scroll;
+	overflow-x:scroll;
+	/*当鼠标移到上方时改变鼠标的样式*/
+	<span style="cursor:wait">wait</span>
+	<br>
+	/*浮动, 当窗口大小变化时, 指定元素自动布局的方式, 类比对图片等布局进行像对文字左, 右对齐的操作*/
+	/*比如插入图片到一段文字中, 或者把段落的第一个字写得特别大*/
+	float:left;
+        width:110px;
+        height:90px;
+        margin:5px;
+        /*清除浮动*/
+        clear:both;
+        /*可以利用浮动进行文档布局*/
+
+        /*元素居中对齐, 在设定好元素宽度的前提下*/
+        width:20px;
+        margin: auto;
+        /*左, 右对齐则用 position or float*/
+
+        /*垂直方向上居中对齐使用 padding*/
+        padding: 20px 0;
+        /*水平和垂直都居中对齐使用 padding 和 text-align:center;*/
+	/*更多方式...*/
+
+	/*组合选择符*/
+	div p {} /*选择所有<div>内的所有<p>*/
+	div>p {} /*选择所有<div>内的直接子元素(一阶子元素)中的所有<p>*/
+	div+p {} /*选择所有<div>的统一层级的元素中的位置上在<div>前一个或者后一个的<p>*/
+	div~p {} /*选择所有<div>的统一层级的元素中的位置上在<div>后一个的<p>*/
+
+}
+
+body {
+	/*背景色*/
+	background-color:aliceblue;
+	/*background-color:#007000;*//*教具绿*/
+	/*背景图片*/
+	/*background-image:url('null');*/
+	/*背景图片不循环平铺*/
+	/*background-repeat:no-repeat;*/
+	/*背景图片位置*/
+	/*background-position:right top;*/
+	/*背景图片不随网页滑动而移动*/
+	/*:background-attachment:fixed;*/
+	/*background:aliceblue url('null') no-repeat right top;*/
+	/*字符颜色*/
+	color:rgb(9, 9, 98);/*圆珠笔蓝*/
+	/*color:red;*/
+}
+
+h1 {
+	font-family:"CHO Pixel Code", Zpix;
+        /*font-variant:small-caps;*/
+        /*居中对齐*/
+        text-align:center;
+        text-transform:uppercase;
+}
+
+h2, h3, h4 {
+	font-family:"CHO Pixel Code", Zpix;
+        font-variant:small-caps;
+}
+
+/*删除超链接的下划线*/
+a {
+	text-decoration:none;
+}
+
+a:link {}/*未访问过的链接*/
+a:visited {}/*已访问过的链接*/
+a:hover { /*鼠标放在链接上时*/
+	/*color:null;
+	font-size:null;
+	font-family:null;
+	background-color:null;
+	text-decoration:underline;*/
+}
+a:active {}/*链接被点击时*/
+/*a:hover 必须在 a:link 和 a:visited 后
+a:active 必须在 a:hover 后*/
+
+/*超链接变成按钮状, 实际上是放了个方盒子在后面*/
+/*a:link,a:visited
+{
+	display:block;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#00b300;
+	width:200px;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+}
+a:hover,a:active
+{*/
+	/*background-color:#009900;*//*slightly darker than the color in a:link & visited*/
+/*}*/
+
+/*替换列表的序号(为图像)*/
+/*ul.unordered_list {
+	list-style-type:circle;
+	list-style-type:square;
+	list-style-image: url('null.png');
+}
+ol.ordered_list {
+	list-style-type:upper-roman;
+	list-style-type:lower-alpha;
+}*/
+
+/*结合 td, th 的 class 实现表格的不同行不同列的不同设计*/
+table {
+	/*表格边框隐藏*/
+	border-collapse: collapse;
+	/*width:100%;*/
+	background-color:#f2ffcc
+}
+table, td, th {
+	border: 1px solid #00b300;
+	/*height:50px;*/
+}
+td {
+	text-align:right;
+}
+/*表格标题的设置(如: 位置)*/
+caption {
+	/*caption-side:bottom;*/
+	text-align:center;
+	font-variant:small-caps;
+	font-size:140%;
+}
+
+/*任何元素都是一个盒子, 在画面上占据的空间由下面这些决定*/
+div {
+    width:278px;/*宽度*/
+    height:225px;/*高度*/
+    padding:10px/*37%*/;/*内边距(透明)*/
+    border:7px solid aliceblue;/*边框*/
+    margin:2px/*1cm*/;/*外边距(透明)*/
+
+    background:pink;
+}
+
+p {} /*p 元素的样式*/
+.alt {} /*class="alt" 元素的样式*/
+.alt p {}/*class="alt" 内<p>元素的样式*/
+p.alt {}/*<p class="alt">元素的样式*/
+
+p {
+	/*边框类型*/
+	border-style:solid;
+	/*单独设置某一边的类型*/
+	border-left-style:dotted;
+	/*border-color:null;*/
+	/*border-width:7px;*/
+	/*圆角边框*/
+	/*border-radius:5px 50px;*/
+	/*轮廓, 在边框外围(不占像素空间)*/
+	/*outline:green dotted thick;*/
+}
+
+p.date {
+	text-align:right;
+}
+
+/*所有属性的值都可以写为 inherit 来继承母类的值*/
+p.long_para {
+	font-family:"CHO Pixel Code", Zpix;
+	/*好耶是铃蓝最喜欢的小大写字体*/
+	font-variant:small-caps;
+	/*字符粗细*/
+	/*font-weight:120%;*/
+	/*font-style:normal;
+        font-style:italic;*/
+        /*反斜体?*/
+        /*font-style:oblique;*/
+        /*font-size:40px;*/
+        /*font-size:1.875em*//*px/16=em*/
+        /*font-size:120%*/
+        /*font:caption
+        font:icon
+        font:menu
+        font:message-box
+        font:small-caption
+        font:status-bar*/
+	/*首行缩进*/
+	/*text-indent:50px;*/
+	background-color:aliceblue;
+	/*color:#1a3300;*/
+	/*color:red;*/
+	/*两端对齐*/
+	text-align:justify;
+	/*转换文字大小写*/
+	/*text-transform:uppercase;
+        text-transform:lowercase;
+        text-transform:capitalize;*/
+        /*文字装饰*/
+        /*text-decoration:overline;
+        text-decoration:line-through;
+        text-decoration:underline;*/
+	/*字符间距*/
+        /*letter-spacing:-3px;*/
+	/*单词间距*/
+        /*word-spacing:30px;*/
+	/*行间距*/
+        /*line-height:200%;*/
+	/*文字放置方向*/
+        /*direction:rtl;*/
+        /*文字书写方向*/
+        /*unicode-bidi: bidi-override;*/
+	/*禁用文字环绕, 以免浏览器窗口缩放时排版混乱*//*不换行直到遇到 <br>*/
+        white-space:nowrap;
+	/*在文字间的图片与该行文字对齐的方式*/
+        /*vertical-align:text-top;
+        vertical-align:text-bottom;*/
+	/*文字阴影(本质上是再打印文字一次)*/
+        /*text-shadow:2px 2px #FF0000;*/
+        /*模糊阴影*/
+	/*text-shadow:2px 2px 8px #FF0000;*/
+	/*白色文字阴影*/
+	/*color:white;
+        text-shadow:2px 2px 4px #000000;*/
+	/*霓虹灯*/
+        /*text-shadow:0 0 3px #FF0000;*/
+}
